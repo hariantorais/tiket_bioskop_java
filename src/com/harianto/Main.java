@@ -1,21 +1,19 @@
 package com.harianto;
-
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String kode;
-        String jam;
-        int harga = 30000;
+        String kode, jam, nama, nomor;
+        int harga = 30000, pilihFilm, pilihJam;
         Scanner input = new Scanner(System.in);
         Tiket user = new Tiket();
 
         System.out.println("=====================================");
         System.out.println("PEMESANAN TIKET BIOSKOP");
         System.out.println("Masukkan Nama :");
-        String nama = input.next();
+        nama = input.next();
         System.out.println("Masukkan Nomor Telpon:");
-        String nomor = input.next();
+        nomor = input.next();
 
         user.setNama(nama);
         user.setTelepon(nomor);
@@ -25,7 +23,7 @@ public class Main {
         System.out.println("2. Superman");
         System.out.println("3. Batman");
         System.out.println("Masukkan pilihan : ");
-        int pilihFilm = input.nextInt();
+        pilihFilm = input.nextInt();
         if (pilihFilm == 1) {
             kode = "A23 - Spiderman";
         }
@@ -41,7 +39,7 @@ public class Main {
         System.out.println("2. 18.00");
         System.out.println("3. 20.00");
         System.out.println("Masukkan pilihan : ");
-        int pilihJam = input.nextInt();
+        pilihJam = input.nextInt();
 
         if (pilihJam == 1) {
             jam = "15.00";
